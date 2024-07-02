@@ -37,6 +37,10 @@ resource "aws_s3_object" "index" {
   source = "index.html"
   acl ="public-read"
   content_type = "text/html"
+      depends_on = [ 
+      aws_s3_bucket.my_bucket, 
+      aws_s3_bucket_acl.example
+      ]
 }
 
 resource "aws_s3_object" "error" {
@@ -45,6 +49,10 @@ resource "aws_s3_object" "error" {
   source = "error.html"
   acl ="public-read"
   content_type = "text/html"
+      depends_on = [ 
+      aws_s3_bucket.my_bucket, 
+      aws_s3_bucket_acl.example
+      ]
 }
 
 resource "aws_s3_object" "profile" {
@@ -52,6 +60,10 @@ resource "aws_s3_object" "profile" {
     key = "profile.png"
     source = "profile.png"
     acl ="public-read"
+    depends_on = [ 
+      aws_s3_bucket.my_bucket, 
+      aws_s3_bucket_acl.example
+      ]
   
 }
 
