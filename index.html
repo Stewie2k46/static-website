@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Inline CSS for simplicity; consider moving to external stylesheet */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333; /* Default text color */
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #3498db; /* Header text color */
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .project {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 5px solid #3498db;
+            transition: transform 0.3s ease;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        .review {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 5px solid #e67e22;
+            transition: transform 0.3s ease;
+        }
+        .review:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        .profile-img {
+            display: block;
+            margin: 20px auto;
+            width: 200px; /* Adjust size as needed */
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>John's Portfolio</h1>
+        </header>
+
+        <!-- Profile Image -->
+        <img src="https://aws-nv-bucket-azhar-ap-south.s3.ap-south-1.amazonaws.com/profile.png/" alt="John's Profile Picture" class="profile-img">
+
+        <!-- Projects Section -->
+        <section class="section">
+            <h2 style="color: #3498db;">Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of Project 1.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of Project 2.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="section">
+            <h2 style="color: #e67e22;">Reviews</h2>
+            <div class="review">
+                <p>"Great work on Project 1! Highly recommended."</p>
+                <p>- Reviewer A</p>
+            </div>
+            <div class="review">
+                <p>"Project 2 exceeded expectations. Very professional."</p>
+                <p>- Reviewer B</p>
+            </div>
+            <!-- Add more reviews as needed -->
+        </section>
+    </div>
+
+    <!-- JavaScript for additional functionality could go here if needed -->
+
+</body>
+</html>
